@@ -32,6 +32,7 @@ public class Lesson3assignment1Application {
 		System.out.println("Please input your directory path.");
 		Scanner sc = new Scanner(System.in);
 		String path = sc.nextLine();
+		sc.close();
 		FileLister mainDirectory = new FileLister(path);
 		mainDirectory.list("");
 	};
